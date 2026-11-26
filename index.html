@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Evan White Web Design | Websites that explain your work</title>
+  <meta name="description" content="Evan White is an independent web designer and developer. Clear, fast, hand-built websites for small businesses and growing teams, with fixed prices and one person accountable from first call to launch.">
+  <meta name="theme-color" content="#F2F0EB">
+  <link rel="canonical" href="https://evanwhite.design/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evan White Web Design">
+  <meta property="og:description" content="Websites that explain your work, so you don't have to.">
+  <meta property="og:image" content="https://evanwhite.design/images/og-image.jpg">
+  <meta property="og:url" content="https://evanwhite.design/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Flag JS and motion preference before first paint so nothing flashes. -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('motion');
+    })();
+  </script>
+  <script src="js/main.js" type="module"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Evan White Web Design",
+    "url": "https://evanwhite.design/",
+    "email": "hello@evanwhite.design",
+    "description": "Independent web design and development for small businesses and growing teams.",
+    "founder": { "@type": "Person", "name": "Evan White" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- GPU stage. Sits behind the content and redraws the work plates.
+       Stays empty (and hidden) when WebGPU and WebGL2 are unavailable. -->
+  <canvas class="gpu-stage" aria-hidden="true"></canvas>
+
+  <header class="nav" data-nav>
+    <div class="nav__bar wrap">
+      <a class="nav__brand" href="#top" aria-label="Evan White Web Design, back to top">Evan White</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--small nav__cta" href="#contact">Start a project</a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="nav__toggle-label">Menu</span>
+        <span class="nav__toggle-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <div class="menu" id="menu" data-menu hidden>
+      <nav class="menu__inner wrap" aria-label="Mobile">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <p class="menu__note">Booking new projects for February 2027. <a href="mailto:hello@evanwhite.design">hello@evanwhite.design</a></p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero. On larger screens the latest project grows to fill the stage as you scroll. -->
+    <section class="hero" id="top" data-hero aria-labelledby="hero-title">
+      <div class="hero__stage wrap" data-hero-stage>
+        <h1 class="hero__title" id="hero-title" data-split data-hero-fade>Websites that explain your work, so you don’t have to.</h1>
+
+        <div class="hero__intro" data-hero-fade>
+          <p class="hero__lead" data-load>I’m Evan, an independent designer and developer. I help small businesses and growing teams turn what they do into a clear, fast website that earns trust in the first minute and brings in the right inquiries.</p>
+          <div class="hero__actions" data-load>
+            <a class="btn" href="#contact">Start a project</a>
+            <a class="link-arrow" href="#work">See the work <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="availability" data-load><span class="dot" aria-hidden="true"></span>Booking new projects for February 2027</p>
+        </div>
+
+        <figure class="hero__feature" data-load-plate>
+          <div class="plate plate--hero" data-plate data-hero-plate>
+            <img src="images/work-fieldnote-1600.webp"
+                 srcset="images/work-fieldnote-800.webp 800w, images/work-fieldnote-1600.webp 1600w"
+                 sizes="(min-width: 900px) 92vw, 100vw"
+                 width="1600" height="1000" fetchpriority="high" decoding="async"
+                 alt="The Fieldnote Coffee homepage: a cream page with the headline Coffee for slow mornings and long walks, beside an illustrated coffee bag and cup.">
+          </div>
+          <figcaption class="hero__caption"><a href="#fieldnote">Latest launch: Fieldnote Coffee, October 2026</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Social proof -->
+    <section class="proof wrap" aria-labelledby="proof-title">
+      <div class="proof__intro">
+        <h2 class="proof__title" id="proof-title" data-split data-reveal>Sixty-two launches, most of them found by word of mouth.</h2>
+        <p class="proof__body" data-reveal>New projects usually start with a past client telling a friend. That only happens when a site keeps doing its job long after launch day, so that is what I build for.</p>
+      </div>
+
+      <dl class="stats">
+        <div class="stat" data-reveal>
+          <dt>Average lift in inquiries in the first 90 days</dt>
+          <dd><span class="stat__num">2.4×</span></dd>
+        </div>
+        <div class="stat" data-reveal>
+          <dt>Average rating across 41 client reviews</dt>
+          <dd><span class="stat__num">4.9</span></dd>
+        </div>
+        <div class="stat" data-reveal>
+          <dt>Median load time on a mid-range phone at launch</dt>
+          <dd><span class="stat__num">0.9s</span></dd>
+        </div>
+      </dl>
+
+      <div class="clients" data-reveal>
+        <h3 class="clients__title">Recent clients include</h3>
+        <ul class="clients__list">
+          <li>Fieldnote Coffee</li>
+          <li>Halden Physio</li>
+          <li>Marlow &amp; Finch</li>
+          <li>Tidewater</li>
+          <li>Oak &amp; Ember Bakery</li>
+          <li>North Loop Dental</li>
+          <li>Brightwater Legal</li>
+          <li>Common Thread Studio</li>
+          <li>Parcel &amp; Post</li>
+          <li>Lumen Optometry</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="work__head">
+        <h2 id="work-title" data-split data-reveal>Recent work, and what it changed.</h2>
+        <p data-reveal>Every project starts with a business problem, not a mood board. Here are four of them, and what happened after launch.</p>
+      </div>
+
+      <article class="project project--a" id="fieldnote" aria-labelledby="p1-title">
+        <div class="plate plate--16x10" data-plate>
+          <img src="images/work-fieldnote-1600.webp"
+               srcset="images/work-fieldnote-800.webp 800w, images/work-fieldnote-1600.webp 1600w"
+               sizes="(min-width: 900px) 62vw, 100vw"
+               width="1600" height="1000" loading="lazy" decoding="async"
+               alt="Fieldnote Coffee homepage with a subscription call to action and an illustrated bag of Hollow Ridge beans.">
+        </div>
+        <div class="project__text">
+          <h3 id="p1-title" data-reveal>Fieldnote Coffee</h3>
+          <p data-reveal>A roaster with loyal regulars and a clunky online shop. We rebuilt the store around subscriptions and wrote product pages that read like a conversation at the counter.</p>
+          <dl class="project__meta" data-reveal>
+            <div><dt>Result</dt><dd>Subscriptions up 38% in the first quarter</dd></div>
+            <div><dt>Scope</dt><dd>Strategy, copy, design, Shopify build</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project project--b" aria-labelledby="p2-title">
+        <div class="plate plate--4x3" data-plate>
+          <img src="images/work-halden-1600.webp"
+               srcset="images/work-halden-800.webp 800w, images/work-halden-1600.webp 1600w"
+               sizes="(min-width: 900px) 58vw, 100vw"
+               width="1600" height="1200" loading="lazy" decoding="async"
+               alt="Halden Physio homepage with a booking panel showing appointment times, a selected clinician and clinic opening hours.">
+        </div>
+        <div class="project__text">
+          <h3 id="p2-title" data-reveal>Halden Physio</h3>
+          <p data-reveal>Three clinics and one phone line that never stopped ringing. The new site helps patients find the right clinician and book in four taps, any hour of the day.</p>
+          <dl class="project__meta" data-reveal>
+            <div><dt>Result</dt><dd>Online bookings rose from 22% to 71% of new patients</dd></div>
+            <div><dt>Scope</dt><dd>UX, design, booking integration</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project project--c" aria-labelledby="p3-title">
+        <div class="plate plate--4x5" data-plate>
+          <img src="images/work-marlow-1200.webp"
+               srcset="images/work-marlow-700.webp 700w, images/work-marlow-1200.webp 1200w"
+               sizes="(min-width: 900px) 40vw, 100vw"
+               width="1200" height="1500" loading="lazy" decoding="async"
+               alt="Marlow and Finch project page with a line drawing of a timber house beside a brick kiln chimney, and a list of recent projects.">
+        </div>
+        <div class="project__text">
+          <h3 id="p3-title" data-reveal>Marlow &amp; Finch</h3>
+          <p data-reveal>A two-person architecture practice up against firms ten times its size. We let the drawings lead and made every sentence earn its place.</p>
+          <dl class="project__meta" data-reveal>
+            <div><dt>Result</dt><dd>Shortlisted for two public commissions within six months</dd></div>
+            <div><dt>Scope</dt><dd>Art direction, design, build</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project project--d" aria-labelledby="p4-title">
+        <div class="plate plate--2x1" data-plate>
+          <img src="images/work-tidewater-2000.webp"
+               srcset="images/work-tidewater-1000.webp 1000w, images/work-tidewater-2000.webp 2000w"
+               sizes="100vw"
+               width="2000" height="1000" loading="lazy" decoding="async"
+               alt="Tidewater homepage on a dark background with a contour map of a coastline, a highlighted flood zone and a chart of projected sea level rise.">
+        </div>
+        <div class="project__text">
+          <h3 id="p4-title" data-reveal>Tidewater</h3>
+          <p data-reveal>A climate data startup with a powerful model and a product that was hard to explain. The site turns flood projections into something a city planner can picture in seconds.</p>
+          <dl class="project__meta" data-reveal>
+            <div><dt>Result</dt><dd>Demo requests tripled in the first month</dd></div>
+            <div><dt>Scope</dt><dd>Messaging, design, WebGL, build</dd></div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- Services -->
+    <section class="services wrap" id="services" aria-labelledby="services-title">
+      <div class="services__head">
+        <h2 id="services-title" data-split data-reveal>Ways we can work together.</h2>
+        <p data-reveal>Clear scopes, fixed prices, and one person accountable from the first call to launch day. Every project includes copy support, accessibility checks and a site you can edit yourself.</p>
+      </div>
+
+      <ol class="services__list">
+        <li class="service" data-reveal>
+          <h3 class="service__name">A new website</h3>
+          <p class="service__desc">For businesses that have outgrown a template, or never had a proper site. Positioning, structure, design and a hand-built site, start to finish.</p>
+          <p class="service__terms">6 to 10 weeks<br>From $12,000</p>
+          <a class="service__ask" href="#contact" data-prefill="new-site">Ask about a new website</a>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__name">A redesign that keeps what works</h3>
+          <p class="service__desc">Your current site has traffic, search rankings and content worth keeping. I find what is working, fix what is not, and move everything over without losing ground.</p>
+          <p class="service__terms">5 to 8 weeks<br>From $9,000</p>
+          <a class="service__ask" href="#contact" data-prefill="redesign">Ask about a redesign</a>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__name">A launch page</h3>
+          <p class="service__desc">One focused page for a product, event or campaign. Written to convert, built to load fast, live in a few weeks.</p>
+          <p class="service__terms">2 to 3 weeks<br>From $4,500</p>
+          <a class="service__ask" href="#contact" data-prefill="launch-page">Ask about a launch page</a>
+        </li>
+        <li class="service" data-reveal>
+          <h3 class="service__name">Ongoing care</h3>
+          <p class="service__desc">A set number of hours each month for updates, new pages, testing and speed. Most clients stay on after launch so the site keeps improving.</p>
+          <p class="service__terms">Monthly<br>From $900</p>
+          <a class="service__ask" href="#contact" data-prefill="care">Ask about ongoing care</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- About -->
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <h2 class="about__title" id="about-title" data-split data-reveal>Hi, I’m Evan.</h2>
+
+      <div class="about__body">
+        <p class="about__lead" data-reveal>I’ve designed and built websites for eleven years, first inside studios and on my own since 2019. Working solo means you talk to the person doing the work, every time.</p>
+        <p data-reveal>I care about the unglamorous parts: how fast a page loads on a weak signal, whether a form makes sense to someone in a hurry, whether the words sound like you. Those details are usually the difference between a site people admire and a site that brings in work.</p>
+        <p data-reveal>No account managers, no handoffs, no surprises on the invoice.</p>
+      </div>
+
+      <div class="process">
+        <h3 class="process__title" data-reveal>How a project runs</h3>
+        <ol class="process__list">
+          <li data-reveal><h4>A first call</h4><p>Thirty minutes, free. We talk about the business, not the website.</p></li>
+          <li data-reveal><h4>A written proposal</h4><p>Scope, timeline and a fixed price, within three working days.</p></li>
+          <li data-reveal><h4>Design in the browser</h4><p>You see real pages early, on your own phone, instead of static mockups.</p></li>
+          <li data-reveal><h4>Launch, then look after</h4><p>I stay on for 30 days after launch to fix, tune and measure.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Testimonials. Words light up as each quote scrolls through the viewport. -->
+    <section class="voices wrap" aria-labelledby="voices-title">
+      <h2 class="voices__title" id="voices-title" data-split data-reveal>In their words.</h2>
+
+      <figure class="quote quote--lg">
+        <blockquote data-words>Evan asked better questions about our business in one call than our last agency asked in a year. The site went live in seven weeks and the phones have been busier ever since.</blockquote>
+        <figcaption data-reveal>Priya Raman, owner of Halden Physio</figcaption>
+      </figure>
+
+      <figure class="quote quote--md">
+        <blockquote data-words>He wrote half our copy just by listening to us talk. Customers now tell us the website sounds exactly like the shop.</blockquote>
+        <figcaption data-reveal>Tom Okafor, cofounder of Fieldnote Coffee</figcaption>
+      </figure>
+
+      <figure class="quote quote--sm">
+        <blockquote data-words>Calm, quick and honest about what we didn’t need. We came in wanting an animation and left with a much stronger case for hiring us.</blockquote>
+        <figcaption data-reveal>Dana Marlow, director at Marlow &amp; Finch</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner wrap">
+        <div class="contact__intro">
+          <h2 id="contact-title" data-split data-reveal>Tell me what you’re working on.</h2>
+          <p data-reveal>A few lines is plenty. I reply within one working day, usually with a couple of questions and a time to talk.</p>
+          <p class="contact__direct" data-reveal>Rather write an email? <a href="mailto:hello@evanwhite.design">hello@evanwhite.design</a></p>
+        </div>
+
+        <!-- Set action to your form endpoint (Formspree, Netlify, your own API).
+             Without one, submitting opens a pre-filled email instead. -->
+        <form class="form" action="" method="post" novalidate data-form>
+          <div class="field" data-reveal>
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" data-error></p>
+          </div>
+
+          <div class="field" data-reveal>
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+            <p class="field__error" id="f-email-err" data-error></p>
+          </div>
+
+          <fieldset class="field field--choices" data-reveal>
+            <legend>What do you need?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="project" value="new-site" checked><span>A new website</span></label>
+              <label class="choice"><input type="radio" name="project" value="redesign"><span>A redesign</span></label>
+              <label class="choice"><input type="radio" name="project" value="launch-page"><span>A launch page</span></label>
+              <label class="choice"><input type="radio" name="project" value="care"><span>Ongoing care</span></label>
+              <label class="choice"><input type="radio" name="project" value="not-sure"><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field" data-reveal>
+            <label for="f-budget">Budget</label>
+            <div class="select">
+              <select id="f-budget" name="budget">
+                <option value="">Prefer to discuss</option>
+                <option>Under $5,000</option>
+                <option>$5,000 to $10,000</option>
+                <option>$10,000 to $20,000</option>
+                <option>$20,000 or more</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field" data-reveal>
+            <label for="f-message">A little about the project</label>
+            <textarea id="f-message" name="message" rows="5" required aria-describedby="f-message-hint f-message-err"></textarea>
+            <p class="field__hint" id="f-message-hint">What you do, what isn’t working today, and any dates that matter.</p>
+            <p class="field__error" id="f-message-err" data-error></p>
+          </div>
+
+          <!-- Honeypot for bots. Hidden from people and assistive tech. -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-company">Company website</label>
+            <input id="f-company" name="company_website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__submit" data-reveal>
+            <button class="btn btn--light" type="submit">Send it over</button>
+            <p class="form__status" role="status" aria-live="polite" data-status></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner wrap">
+      <p class="footer__line">Independent web design and development for small businesses and growing teams.</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:hello@evanwhite.design">Email</a>
+      </nav>
+      <p class="footer__mark" aria-hidden="true">Evan White</p>
+      <div class="footer__base">
+        <p>© <span data-year>2026</span> Evan White Web Design</p>
+        <p>Hand-built with HTML, CSS and a little WebGPU.</p>
+        <a class="footer__top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
